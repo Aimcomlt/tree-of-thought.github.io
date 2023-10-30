@@ -2,22 +2,9 @@
 Prompt engineering code examples.
 
 ///////////FIRST IS THE SUGGESTION AGENT WHO CREATE A KNOWLEDGE BASE WITH PERSONA FOR THE CHAT ROOMS:
-import OpenAI from 'openai';
-
-console.log(process.env.REACT_APP_OPENAI_API_KEY);
-
-const openai = new OpenAI({
-  
-  apiKey: process.env.REACT_APP_OPENAI_API_KEY, 
-  dangerouslyAllowBrowser: true
-});
 
 class SuggestionAgent {
-  /**
-   * Fetches agent suggestions based on the provided content and details.
-   * @param {string} clientDetails - Additional details provided by the client.
-   * @returns {Promise<Object|null>} - Returns agent suggestions or null in case of an error.
-   */
+
   async getSuggestions(clientDetails) {
    try {
           // Transforming clientDetails into a Generated Knowledge Prompting structure
@@ -74,7 +61,3 @@ class SuggestionAgent {
     }
   }
 }
-
-
-
-export default SuggestionAgent;
