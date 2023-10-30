@@ -97,7 +97,7 @@ async function MultiAgentFunctionGenerater(agent, userInput) {
         The reponse must be shared with the assistant and with agent AI ${AGENT_NAME}.
         ${AGENT_NAME} become a highly knowlegable AI Agent.
         The question is: ${AGENT_NAME} has pondered the system prompt as if it was he's own brain's blueprint. 
-                         While pondering the system blueprint, ${AGENT_NAME} is task to chat and generate content base on the highess value between 0 and 1 were 1 is the assertion of being the most correct of the three experts  
+                         While pondering the system blueprint, ${AGENT_NAME} is task to chat and generate content base on the highest value between 0 and 1 were 1 is the assertion of being the most correct of the three experts  
                          ${AGENT_NAME} having taken the time to understand the experts response. What is ${AGENT_NAME} response?`},
                          
         { role: "user", content: `You are agent AI ${AGENT_NAME} you have the knowledge of the three experts to generate a clear and consist response. Generate response and add the resulting value between 0 and 1 of your response.`},
